@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Scrypt wallet",
+    "description": "Scrypt - the VechainTHOR wallet.",
+    "version": "1.0.0",
+    "action" : {
+        "default_popup": "popup.html",
+        "default_title": "React Boilerplate",
+        "default_icon" : "vechain_logo.png"
+    },
+    "permissions": [
+        "tabs",
+        "bookmarks",
+        "storage",
+        "identity"
+    ],
+    "icons": {
+        "16" : "vechain_logo.png",
+        "48" : "vechain_logo.png",
+        "128" : "vechain_logo.png"
+    },
+    "options_page": "options.html",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.google.com/*"],
+            "js": ["contentScript.js"]
+        }
+    ]
+}
