@@ -1,0 +1,32 @@
+body {
+    height: 570px;
+    width: 360px;
+
+    background-color: rgb(24, 24, 24);
+}
+
+.gradient-background-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 0%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgb(69, 188, 235), rgba(97, 54, 241, 0));
+    opacity: 0.4;
+}
+
+.gradient-background-bottom{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translate(-50%, 0%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgb(210, 69, 235), rgba(97, 54, 241, 0));
+    opacity: 0.4;
+}
